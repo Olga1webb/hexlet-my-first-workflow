@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "hello3"
+version = "0.1.0"
+description = ""
+authors = ["olga1webb <olga1webb@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+colorama = "^0.4.6"
+scripts = "^3.0"
+
+[tool.poetry.scripts]
+say-hello = "hello3.scripts.say_hello:main"
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.20.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
